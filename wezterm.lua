@@ -3,7 +3,8 @@ local config = {}
 
 config.font = wezterm.font 'FiraCode Nerd Font Mono'
 config.color_scheme = 'catppuccin-mocha'
-config.font_size = 16.0
+config.font_size = 16
+config.line_height = 1.25
 config.default_cursor_style = 'BlinkingBlock'
 config.animation_fps = 1
 config.cursor_blink_ease_in = 'Constant'
