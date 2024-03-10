@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 local config = {}
 
 config.font = wezterm.font 'FiraCode Nerd Font Mono'
-config.color_scheme = 'catppuccin-mocha'
+config.color_scheme = 'Everforest Light (Gogh)'
 config.font_size = 16
 config.line_height = 1.25
 config.default_cursor_style = 'BlinkingBlock'
