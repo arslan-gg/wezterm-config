@@ -3,17 +3,22 @@ local config = {}
 
 -- Colors & Appearance
 config.font = wezterm.font 'FiraCode Nerd Font Mono'
-config.color_scheme = '3024 (dark) (terminal.sexy)'
+local black_theme = wezterm.color.get_builtin_schemes()['3024 (dark) (terminal.sexy)']
+black_theme.background = 'black'
+config.color_schemes = {
+  ['Black Theme'] = black_theme,
+}
+config.color_scheme = 'Black Theme'
 config.hide_tab_bar_if_only_one_tab = true
 config.font_size = 16
-config.line_height = 1.22
+config.line_height = 1.225
 config.default_cursor_style = 'BlinkingBlock'
 config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 config.use_fancy_tab_bar = false
 config.colors = {
   tab_bar = {
-    background = '#000',
+    background = 'black',
     active_tab = {
       bg_color = '#2b2042',
       fg_color = '#c0c0c0',
