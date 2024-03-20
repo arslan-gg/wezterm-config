@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 local config = {}
 
+-- Colors & Appearance
 config.font = wezterm.font 'FiraCode Nerd Font Mono'
 config.color_scheme = '3024 (dark) (terminal.sexy)'
 config.hide_tab_bar_if_only_one_tab = true
@@ -53,6 +54,9 @@ config.window_frame = {
   border_bottom_height = 0,
   border_top_height = 0,
 }
+config.native_macos_fullscreen_mode = true
+
+-- Require exit conformations
 config.keys = {
   {
     key = 'w',
@@ -61,6 +65,5 @@ config.keys = {
   },
 }
 config.skip_close_confirmation_for_processes_named = { }
-config.native_macos_fullscreen_mode = true
 
 return config
